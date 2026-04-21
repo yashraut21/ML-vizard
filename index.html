@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ML-Vizard — Interactive ML Curriculum Visualizer</title>
+  <meta name="description" content="ML-Vizard: a visual-first machine learning curriculum. Explore vectors, neural networks, gradient descent, optimizers, and more — all interactive, all in your browser." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" />
+  <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body>
+  <div id="particle-bg"></div>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">ML-<span class="logo-accent">Vizard</span></span>
+        <span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#image-lab" class="nav-link" id="nav-image-lab">Image Lab</a></li>
+        <li><a href="#audio-lab" class="nav-link" id="nav-audio-lab">Audio Lab</a></li>
+        <li><a href="#concepts" class="nav-link" id="nav-concepts">Concepts</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" id="nav-mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- APP ROOT -->
+  <main id="app">
+    <!-- Pages are injected here by main.js -->
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
